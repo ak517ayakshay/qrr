@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Generate QR Code</title>
+  </head>
+  <body>
+    <form method="POST" enctype="multipart/form-data">
+      {{ form.hidden_tag() }}
+      <p>
+          {{ form.data.label }}<br>
+          {{ form.data(size=32) }}
+      </p>
+      <p>{{ form.submit() }}</p>
+    </form>
+  </body>
+</html>
